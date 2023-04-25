@@ -5,7 +5,7 @@ $message = "ติ๊กคอนจ๊อบดิ๊";
 
 $curl = curl_init();
 
-$response = curl_setopt_array($curl, array(
+curl_setopt_array($curl, array(
     CURLOPT_URL => 'https://notify-api.line.me/api/notify',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',

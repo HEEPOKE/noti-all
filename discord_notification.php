@@ -6,7 +6,7 @@ $message = array('content' => 'AI KAK BASUKE STUPID!!!!!');
 
 $curl = curl_init($webhook_url);
 
-$response = curl_setopt_array($curl, array(
+curl_setopt_array($curl, array(
     CURLOPT_HTTPHEADER => array('Content-Type: application/json'),
     CURLOPT_POST => 1,
     CURLOPT_POSTFIELDS => json_encode($message),
